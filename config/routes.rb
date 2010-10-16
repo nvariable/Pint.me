@@ -1,6 +1,9 @@
 Pintme::Application.routes.draw do
   match 'auth/:provider/callback' => 'sessions#create'
   resources :sessions
+  resources :pints
+
+  get "home/index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
