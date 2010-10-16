@@ -1,3 +1,0 @@
-[submodule "vendor/plugins/moonshine"]
-	path = vendor/plugins/moonshine
-	url = git://github.com/railsmachine/moonshine.git

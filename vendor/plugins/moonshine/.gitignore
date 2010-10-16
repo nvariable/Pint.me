@@ -1,0 +1,12 @@
+pkg
+*.gem
+rdoc
+doc
+coverage
+.autotest
+spec/test.log
+spec/generator.log
+.ginger
+.rvmrc
+.bundle
+.DS_Store
