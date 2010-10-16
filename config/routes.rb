@@ -1,4 +1,6 @@
 Pintme::Application.routes.draw do
+  resources :businesses
+
   match 'auth/:provider/callback' => 'sessions#create'
   resources :sessions
   resources :pints
