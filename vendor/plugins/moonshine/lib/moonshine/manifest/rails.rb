@@ -47,6 +47,8 @@ class Moonshine::Manifest::Rails < Moonshine::Manifest
     case database_environment[:adapter]
     when 'mysql'
       recipe :mysql_server, :mysql_gem, :mysql_database, :mysql_user, :mysql_fixup_debian_start
+    when 'mysql2'
+      recipe :mysql_server, :mysql_gem, :mysql_database, :mysql_user, :mysql_fixup_debian_start
     when 'postgresql'
       recipe :postgresql_server, :postgresql_gem, :postgresql_user, :postgresql_database
     when 'sqlite' || 'sqlite3'
