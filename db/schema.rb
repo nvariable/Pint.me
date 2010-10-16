@@ -10,13 +10,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101016193755) do
+ActiveRecord::Schema.define(:version => 20101016203935) do
+
+  create_table "authorizations", :force => true do |t|
+    t.string   "provider"
+    t.string   "uid"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "pints", :force => true do |t|
     t.integer  "user_id"
     t.integer  "business_id"
     t.datetime "redemption_date"
     t.integer  "purchaser_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "email"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
