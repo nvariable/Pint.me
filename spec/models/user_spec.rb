@@ -28,5 +28,19 @@ describe User do
 
   context "associations" do
     it {should have_many :pints }
+    it {should have_many :purchased_pints }
+  end
+
+
+  context "purchasing pints" do
+    before(:each) do
+      @user = Factory(:user)
+      @user2 = Factory(:user)
+    end 
+
+    it "should mark a pint as purchased by a user" do
+      @user.purchase_pint_for(@user2)
+      @user.purchased_pints.count.should == 1
+    end
   end
 end
