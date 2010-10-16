@@ -1,1 +1,1 @@
-server 'rr', :app, :web, :db, :primary => true
+server 'pintme', :app, :web, :db, :primary => true
