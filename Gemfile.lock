@@ -163,9 +163,9 @@ PLATFORMS
 
 DEPENDENCIES
   capistrano
-  haml
   factory_girl_rails
   faker
+  haml
   jquery-rails
   mongrel (= 1.2.0.pre2)
   mysql2
