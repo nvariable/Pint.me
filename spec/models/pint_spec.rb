@@ -1,5 +1,11 @@
 require 'spec_helper'
 
 describe Pint do
-  pending "add some examples to (or delete) #{__FILE__}"
+
+  context "associations" do
+    should belong_to :user
+    should belong_to :business
+    should belong_to :purchaser
+  end
+
 end
