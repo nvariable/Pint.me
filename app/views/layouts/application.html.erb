@@ -3,17 +3,24 @@
   <head>
     <meta charset="utf-8"/>
     <title>Pint.me</title>
+    <script type="text/javascript" src="http://use.typekit.com/dvf6frb.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <%= stylesheet_link_tag :all %>
     <meta name="viewport" content="initial-scale=1.0, width=device-width, maximum-scale=1.0"/>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
     <%= javascript_include_tag :defaults %>
     <%= csrf_meta_tag %>
   </head>
 
   <body>
     <%= yield %>
+    <script type="text/javascript">
+      var rumbleUrl = 'http://railsrumble.com/teams/something-witty';
+    </script>
+    <script type="text/javascript" src="http://blog.railsrumble.com/javascripts/rumble-r10-sash.js"></script>
+    
   </body>
 </html>
