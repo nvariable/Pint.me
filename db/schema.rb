@@ -10,6 +10,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20101016193755) do
+
+  create_table "pints", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "business_id"
+    t.datetime "redemption_date"
+    t.integer  "purchaser_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
