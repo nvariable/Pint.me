@@ -138,6 +138,7 @@ GEM
     ruby-openid-apps-discovery (1.2.0)
       ruby-openid (>= 2.1.7)
     rubyntlm (0.1.1)
+    shoulda (2.11.3)
     thor (0.14.3)
     treetop (1.4.8)
       polyglot (>= 0.3.1)
@@ -154,3 +155,4 @@ DEPENDENCIES
   rack_clicky
   rails (= 3.0.1)
   rspec-rails (>= 2.0.0)
+  shoulda

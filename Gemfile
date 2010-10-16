@@ -8,5 +8,6 @@ gem 'omniauth'
 gem 'rack_clicky'
 
 group :development, :test do
+  gem "shoulda"
   gem 'rspec-rails', '>= 2.0.0'
 end
