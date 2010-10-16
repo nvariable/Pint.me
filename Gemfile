@@ -5,6 +5,7 @@ gem 'mysql2'
 gem 'jquery-rails'
 gem 'capistrano'
 gem 'omniauth'
+gem 'rack_clicky'
 
 group :development, :test do
   gem 'rspec-rails', '>= 2.0.0'
