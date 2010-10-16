@@ -25,4 +25,8 @@ describe User do
     user.new_record?.should be_false
     [:name, :email, :token].each{|a| user.send(a).should_not be_nil}
   end
+
+  context "associations" do
+    it {should have_many :pints }
+  end
 end
