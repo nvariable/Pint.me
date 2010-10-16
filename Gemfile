@@ -7,6 +7,7 @@ gem 'capistrano'
 gem 'omniauth'
 gem 'rack_clicky'
 gem 'mongrel', '1.2.0.pre2'
+gem 'haml'
 gem 'uuid'
 
 group :development, :test do
