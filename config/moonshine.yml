@@ -25,6 +25,9 @@
 #    - awesome
 #    - libawesome-dev
 
+:shared_config:
+  - config/database.yml
+
 # Passenger-specific options. Refer to the following templates for details
 # about what values are used:
 # - vendor/plugins/moonshine/lib/moonshine/manifest/rails/templates/passenger.conf.erb 
