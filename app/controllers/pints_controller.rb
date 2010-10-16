@@ -1,0 +1,2 @@
+class PintsController < ApplicationController
+end
