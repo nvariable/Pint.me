@@ -1,0 +1,39 @@
+:ruby: ree187
+
+:application: pintme
+
+:user: rails
+
+:deploy_to: /srv/pintme
+
+:domain: beerme.r10.railsrumble.com
+
+:repository: git@github.com:railsrumble/rr10-team-301.git
+
+:shared_children:
+- system
+- log
+- pids
+- config
+
+# Specify native dependencies of gems. Moonshine comes with some preconfigured
+# defaults, but this allows you to add to them. Please file an issue at
+# http://github.com/railsmachine/moonshine/issues if there are additional gem
+# dependencies Moonshine should know about.
+#:apt_gems:
+#  :awesomegem:
+#    - awesome
+#    - libawesome-dev
+
+# Passenger-specific options. Refer to the following templates for details
+# about what values are used:
+# - vendor/plugins/moonshine/lib/moonshine/manifest/rails/templates/passenger.conf.erb 
+# - vendor/plugins/moonshine/lib/moonshine/manifest/rails/templates/passenger.vhost.erb 
+:passenger:
+  :max_pool_size: 3
+
+# MySQL-specific options. Refer to the following templates for details about
+# what values are used:
+# - vendor/plugins/moonshine/lib/moonshine/manifest/rails/templates/moonshine.cnf.erb 
+:mysql:
+  :innodb_buffer_pool_size: 128M
