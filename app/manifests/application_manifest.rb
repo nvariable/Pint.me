@@ -24,6 +24,7 @@ class ApplicationManifest < Moonshine::Manifest::Rails
 
   # Add your application's custom requirements here
   def application_packages
+    recipe :mysql_server, :mysql_gem, :mysql_database, :mysql_user, :mysql_fixup_debian_start
     # If you've already told Moonshine about a package required by a gem with
     # :apt_gems in <tt>moonshine.yml</tt> you do not need to include it here.
     # package 'some_native_package', :ensure => :installed
