@@ -20,6 +20,8 @@
         =link_to "Pint.me", :controller => "home"
       %p.align_right.toplinks
         = current_user.name if current_user
+        = "|" if current_user
+        = link_to 'Logout', logout_url if current_user
         = link_to "Pint.me participants", :controller => "businesses"
     = yield
     %footer  

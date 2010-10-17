@@ -1,5 +1,11 @@
 $(document).ready(function(){
   $("#q").bind("keyup", function() {
+    clearTimeout($.data(this, 'timer'));
+    var wait = setTimeout(search, 500);
+    $(this).data('timer', wait);
+  });
+
+  function search() {
     $("#q").addClass("loading");
     var form = $("#twitter_search");
     var url = "/home/search";
@@ -8,7 +14,7 @@ $(document).ready(function(){
       $("#twitter_search").removeClass("loading"); 
       $("#search-results").html(html);
     });
-  });
+  };
 });
 
 
