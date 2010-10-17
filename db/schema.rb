@@ -50,8 +50,8 @@ ActiveRecord::Schema.define(:version => 20101017061231) do
     t.string   "token"
     t.string   "screen_name"
     t.string   "secret"
-    t.integer  "pints_purchased"
-    t.integer  "pints_received"
+    t.integer  "purchased_count", :default => 0
+    t.integer  "pints_count",     :default => 0
   end
 
 end

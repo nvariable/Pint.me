@@ -1,4 +1,5 @@
 class PintsController < ApplicationController
+  before_filter :signed_in?
   def index
     @pints = Pint.all
   end
@@ -9,6 +10,6 @@ class PintsController < ApplicationController
   end
 
   def create
-    
+    @pint = Pint.create(params[:pint])
   end
 end
