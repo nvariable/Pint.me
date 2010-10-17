@@ -20,10 +20,9 @@ class User < ActiveRecord::Base
     self.update_attribute(:token, hash['credentials']['token'])
   end
 
-  def purchase_pint_for(recieving_user)
-    reciver = User.find(recieving_user)
-    reciver.pints << Pint.new(:purchaser => self)
-    reciver.save
+  def purchase_pint_for(recieving_user, order = nil)
+    recieving_user.pints << Pint.new(:purchaser => self, :order_id => order )
+    recieving_user.save
   end
 
   def place_order_for(recieving_user, quantity = 1)
