@@ -3,7 +3,7 @@ class Order < ActiveRecord::Base
   belongs_to :purchaser, :class_name => 'User'
   validates_presence_of :user, :purchaser, :quantity, :number
   validates_uniqueness_of :number
-  PINT_PRICE = 500 #in pennies for active_merchant
+  PINT_PRICE = 0 #in pennies for active_merchant
 
   def total
     self.quantity * Order.pint_price

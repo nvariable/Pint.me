@@ -1,0 +1,14 @@
+test:
+  login: timmyd_1255717328_biz_api1.gmail.com
+  password: 1255717341
+  signature: AXouHPAo4cTc9oPM33zjd5pjCDdnAqsfqnlgJf0A4pdNKTp99idxdK7A
+
+development:
+  login: timmyd_1255717328_biz_api1.gmail.com
+  password: 1255717341
+  signature: AXouHPAo4cTc9oPM33zjd5pjCDdnAqsfqnlgJf0A4pdNKTp99idxdK7A
+
+production:
+  login: timmyd_1255717328_biz_api1.gmail.com
+  password: 1255717341
+  signature: AXouHPAo4cTc9oPM33zjd5pjCDdnAqsfqnlgJf0A4pdNKTp99idxdK7A
