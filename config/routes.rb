@@ -7,6 +7,7 @@ Pintme::Application.routes.draw do
 
   get "home/index"
   get "home/dashboard"
+  get "home/search"
 
   match "buy/:screen_name" => "pints#buy"
 

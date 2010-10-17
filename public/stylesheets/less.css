@@ -135,14 +135,18 @@ hr {
 .align_right {
 	text-align: right;
 }
-.login_input, .signup_input {
+.pint_input {
 	font-size: 2em;
-	font-family: ColabReg, Helvetica, sans-serif;
+	font-family: Helvetica, sans-serif;
 	color: #0095cd;
 	width: 100%;	
+	font-weight: bold;
 }
 .spacer {
 	height: 1.5em;
+}
+.twitter {
+	
 }
 /* SIGNUP */
 .container_box {
@@ -192,6 +196,9 @@ hr {
 
 	.toplinks {
 		margin-top: 0px;
+	}
+	.small {
+		color: #ffffff;
 	}
 }
 
