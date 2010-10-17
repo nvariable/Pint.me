@@ -188,8 +188,8 @@ hr {
 	{
 		color: #b6b6b6;
 	}
-.footer {
-}
+
+
 /* 
 2-column, 320 px layout for smartphones
 ---------------------------------------
@@ -212,6 +212,10 @@ hr {
   }
 	.toplinks {
 		margin-top: 0px;
+	}
+	.big {
+		font-size: 20px;
+	  line-height: 36px;
 	}
 }
 
