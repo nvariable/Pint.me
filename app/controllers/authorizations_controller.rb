@@ -12,4 +12,9 @@ class AuthorizationsController < ApplicationController
     self.current_user = @auth.user
     redirect_to home_dashboard_url
   end
+
+  def destroy
+    session[:user_id] = nil
+    redirect_to root_url
+  end
 end

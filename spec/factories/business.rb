@@ -5,3 +5,8 @@ Factory.define :business do |b|
   b.state "Oregon"
   b.zip "97701"
 end
+
+Factory.define :address, :parent=>:business do |a|
+  a.name 'Address One'
+end
+

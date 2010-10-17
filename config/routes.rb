@@ -9,6 +9,8 @@ Pintme::Application.routes.draw do
   get "home/dashboard"
   get "home/search"
 
+  get "logout" => "authorizations#destroy"
+
   match "buy/:screen_name" => "pints#buy"
 
   # The priority is based upon order of creation:

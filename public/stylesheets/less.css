@@ -31,6 +31,10 @@ a img {border: 0;}
 figure {position: relative;}
 figure img {width: 100%;}
 
+/* QUIRKS MODE */
+html {height: 100%;}
+body { height: 100%; margin: 0px; padding: 0px }
+#map_canvas { height: 80% }
 
 
 /*
@@ -131,11 +135,12 @@ hr {
 .align_right {
 	text-align: right;
 }
-.login_input, .signup_input {
+.pint_input {
 	font-size: 2em;
-	font-family: ColabReg, Helvetica, sans-serif;
+	font-family: Helvetica, sans-serif;
 	color: #0095cd;
 	width: 100%;	
+	font-weight: bold;
 }
 .spacer {
 	height: 1.5em;
@@ -148,7 +153,6 @@ hr {
 	padding: 30px;
 	border: 10px solid #b6b6b6;
 	background: #ffffff;
-	line-height: 2;
 	-webkit-box-shadow: 0px 0px 5px #343434;
 	-moz-box-shadow: 0px 0px 5px #343434;
 	box-shadow: 0px 0px 5px #343434;
@@ -167,16 +171,13 @@ hr {
 .intro {
 	width: 552px;
 }
-.signup {
-
+.username {
+	background: #ffffff;
 }
-
-#q {
-	line-height: 75px;
-	font-size: 74px;
-}
-
-
+.separator
+	{
+		color: #b6b6b6;
+	}
 /* 
 2-column, 320 px layout for smartphones
 ---------------------------------------
@@ -197,6 +198,9 @@ hr {
 
 	.toplinks {
 		margin-top: 0px;
+	}
+	.small {
+		color: #ffffff;
 	}
 }
 

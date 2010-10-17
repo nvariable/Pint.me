@@ -3,17 +3,10 @@
   .signup
     .container_box
       .container_header
-        %h3 Who do you want to purchase a pint for?
+        %h3 Who will you buy a pint for?
       = form_tag("/home/search", :method => :get, :remote => true, :id => "twitter_search")
-      = text_field_tag 'q'
+      = text_field_tag 'q', {}, :class => "pint_input"
       .spacer
       #search-results
-      %p
-        %h2
-          My pints: 
-          =link_to "7"
-        %h2
-          Pints bought:
-          =link_to "12"
       .spacer
       .container_footer
