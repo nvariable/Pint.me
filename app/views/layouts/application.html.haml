@@ -24,7 +24,10 @@
           var marker = new google.maps.Marker({position: myLatlng, icon: icon, title: '#{escape_javascript(biz.name)}'});
           markers.push(marker);
           // add the marker to the map
-          marker.setMap(map);        
+          marker.setMap(map);  
+          google.maps.event.addListener(marker, 'click', function() {
+            
+          });
         }
         
       :javascript
@@ -46,7 +49,7 @@
           for(var i=0; i < markers.length; i++){
             markers[i].setMap(null);
           }
-        }
+        }        
       
         function gMapInit(){
           var latlng = new google.maps.LatLng(44.0583333, -121.3141667);
@@ -82,7 +85,7 @@
             | Pints Purchased:
             = current_user.purchased_pints.count
     = yield
-    %footer  
+    %footer{:style=>'padding: 1.2em;'}  
       .spacer
       .small.align_right
         Built by 
