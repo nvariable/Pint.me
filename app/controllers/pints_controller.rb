@@ -10,7 +10,8 @@ class PintsController < ApplicationController
   end
 
   def create
-    @order = @current_user.place_order_for(User.last)
+    recipient = User.find(params[:pint][:user_id])
+    @order = @current_user.place_order_for(recipient)
     setup_response = gateway.setup_purchase(@order.total,
       :ip => request.remote_ip,
       :return_url => confirm_url,
