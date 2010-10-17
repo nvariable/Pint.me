@@ -10,6 +10,13 @@ class ApplicationController < ActionController::Base
     !!current_user
   end
 
+  def require_login
+    unless signed_in?
+      flash[:error] = "You must login to access Pint.me"
+      redirect_to root_url
+    end
+  end
+
   helper_method :current_user, :signed_in?
 
   def current_user=(user)

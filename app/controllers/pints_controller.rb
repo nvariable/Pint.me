@@ -1,5 +1,5 @@
 class PintsController < ApplicationController
-  before_filter :signed_in?
+  before_filter :require_login
   def index
     @pints = Pint.all
   end
@@ -50,5 +50,9 @@ class PintsController < ApplicationController
       :password => "1255717341",
       :signature => "AXouHPAo4cTc9oPM33zjd5pjCDdnAqsfqnlgJf0A4pdNKTp99idxdK7A"
     )
+  end
+
+  def redeem
+    
   end
 end
