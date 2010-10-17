@@ -1,4 +1,6 @@
 class Business < ActiveRecord::Base
+  LOGO_PATH=File.join(Rails.root, 'public', 'images', 'locations')
+  
   has_many :pints
 
   validates_numericality_of :secret_code, :allow_nil=>true
@@ -12,7 +14,11 @@ class Business < ActiveRecord::Base
     
   def to_s
     "#{street_1}, #{city}, #{state}"
-  end  
+  end
+  
+  def has_logo?
+    company_logo && !company_logo.empty? && File.exists?(File.join(LOGO_PATH, read_attribute(:company_logo)))
+  end
   
   def latitude
     geocode.latitude
