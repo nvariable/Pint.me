@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   has_many :authorizations, :dependent=>:destroy
-  validates_uniqueness_of :email, :screen_name
+  validates_uniqueness_of :email, :allow_nil => false
+  validates_uniqueness_of :screen_name
   has_many :pints
   has_many :purchased_pints, :class_name => 'Pint', :foreign_key => "purchaser_id"
   
@@ -22,5 +23,15 @@ class User < ActiveRecord::Base
     reciver = User.find(recieving_user)
     reciver.pints << Pint.new(:purchaser => self)
     reciver.save
+  end
+
+  def self.create_from_screen_name(name = nil)
+    if sn = self.find_by_screen_name(name)
+      return sn
+    else
+      sn = self.create(
+        :screen_name => name
+      )
+    end
   end
 end

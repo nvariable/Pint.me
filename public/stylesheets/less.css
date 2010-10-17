@@ -89,7 +89,7 @@ Default 5-column, 768 px layout for iPads, netbooks, and IE
  */
 
 body {
-  background: rgb(232,232,232);
+  background: rgb(232,232,232) url(/images/bkgrnd.png);
   padding: 60px 36px 0;
   font-family: "adobe-text-pro-1","adobe-text-pro-2",sans-serif;
 	width: 696px;

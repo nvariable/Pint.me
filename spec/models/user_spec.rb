@@ -26,7 +26,18 @@ describe User do
     User.destroy_all
   end
 
-  it "should create a user with the name, uid, token, and email" do
+  it "should create a placeholder user with a new screen name" do
+    lambda{
+      User.create_from_screen_name('wycats')
+    }.should change(User, :count).by(1)
+  end
+
+  it "should return an existing user if screen name already exists" do
+    user_1 = User.create_from_screen_name('joey')
+    User.create_from_screen_name('joey').should == user_1
+  end
+
+  it "should create a user with the name, uid, and token" do
     user= User.create_from_hash!(@response)
     user.new_record?.should be_false
     [:name, :token, :secret, :screen_name].each{|a| user.send(a).should_not be_nil}
