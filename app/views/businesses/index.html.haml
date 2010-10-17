@@ -1,6 +1,21 @@
-%span.gigantic
-  Businesses
-- @businesses.each do |b|
-  %h1
-    = b.id
+%article
+  .spacer
+  .signup
+    .container_box
+      .container_header
+        %h3 Pint.me locations
+      %p
+        = link_to (image_tag "locations/deschutes.jpeg"), "http://deschutesbrewery.com"
+        = link_to (image_tag "locations/mcmenamins.png"), "http://mcmenamins.com"
+        = link_to (image_tag "locations/10barrel.jpeg"), "http://silvermoonbrewing.com"
+        = link_to (image_tag "locations/boneyard.jpg"), "http://boneyardbeer.com"
+        = link_to (image_tag "locations/silvermoon.jpeg"), "http://silvermoonbrewing.com"
+        
+        - @businesses.each do |b|
+          %h1
+            = b.id
+      .spacer
+      .container_footer
+
+
 
