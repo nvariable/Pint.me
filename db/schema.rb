@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101017220119) do
+ActiveRecord::Schema.define(:version => 20101017205410) do
 
   create_table "authorizations", :force => true do |t|
     t.string   "provider"
@@ -32,19 +32,6 @@ ActiveRecord::Schema.define(:version => 20101017220119) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "company_logo"
-  end
-
-  create_table "delayed_jobs", :force => true do |t|
-    t.integer  "priority",   :default => 0
-    t.integer  "attempts",   :default => 0
-    t.text     "handler"
-    t.string   "last_error"
-    t.datetime "run_at"
-    t.datetime "locked_at"
-    t.datetime "failed_at"
-    t.string   "locked_by"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
   create_table "orders", :force => true do |t|
