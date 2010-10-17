@@ -12,4 +12,8 @@ class PintsController < ApplicationController
   def create
     @pint = Pint.create(params[:pint])
   end
+
+  def redeem
+    
+  end
 end
