@@ -18,7 +18,13 @@ class PintsController < ApplicationController
       :cancel_return_url => 'http://pint.me/'
     )
     @order.update_attribute('paypal_token',setup_response.token)
-    redirect_to gateway.redirect_url_for(setup_response.token)
+    if @order.total > 0
+      redirect_to gateway.redirect_url_for(setup_response.token)
+    else
+      @order.send_pints
+      render :action => 'confirm'
+      return
+    end
   end
 
   def confirm
@@ -30,6 +36,7 @@ class PintsController < ApplicationController
         :payer_id => @details.params['payer_id'],
         :token => params[:token]
       )
+      # if @order.total == 0, then we just give the beer credit
       if !purchase.success?
         @message = purchase.message
         render :action => 'error'
@@ -73,10 +80,11 @@ class PintsController < ApplicationController
 
   private
   def gateway
+    @config ||= PaymentGateway.instance.configs[Rails.env]
     @gateway ||= ActiveMerchant::Billing::PaypalExpressGateway.new(
-      :login => "timmyd_1255717328_biz_api1.gmail.com",
-      :password => "1255717341",
-      :signature => "AXouHPAo4cTc9oPM33zjd5pjCDdnAqsfqnlgJf0A4pdNKTp99idxdK7A"
+      :login => @config['login'],
+      :password => @config['password'],
+      :signature => @config['signature']
     )
   end
 
