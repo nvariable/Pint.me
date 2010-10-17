@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   has_many :authorizations, :dependent=>:destroy
-  validates_uniqueness_of :email, :allow_nil => false
+  validates_uniqueness_of :email, :allow_nil => true
   validates_uniqueness_of :screen_name
   has_many :pints
   has_many :purchased_pints, :class_name => 'Pint', :foreign_key => "purchaser_id"

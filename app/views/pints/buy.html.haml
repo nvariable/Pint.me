@@ -1,1 +1,5 @@
-%h2 Buy #{@recipient.screen_name} a Pint
+%h2 Buy #{@recipient.screen_name} a pint
+%p Gosh darn that is might interwebs karma of you!  Fill out the form below to send a cold one to #{@recipient.screen_name}
+= form_for @pint, :url => { :action => 'create' } do |f|
+  = f.hidden_field :user_id
+  = f.submit :value => 'Send Pint'

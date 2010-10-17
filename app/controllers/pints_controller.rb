@@ -5,5 +5,10 @@ class PintsController < ApplicationController
 
   def buy
     @recipient = User.create_from_screen_name(params[:screen_name])
+    @pint = @recipient.pints.new
+  end
+
+  def create
+    
   end
 end
