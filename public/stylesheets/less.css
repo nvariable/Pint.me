@@ -168,10 +168,9 @@ hr {
 .intro {
 	width: 552px;
 }
-.signup {
-
+.username {
+	background: #ffffff;
 }
-
 /* 
 2-column, 320 px layout for smartphones
 ---------------------------------------
