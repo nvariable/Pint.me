@@ -1,13 +1,33 @@
 require 'spec_helper'
 
 describe Business do
+  subject{ Factory.build(:business) }
   context 'associations' do
     it { should have_many :pints }
   end
 
+  it "should include the street_1, city, state (comma delimited)" do
+    attrs= [subject.street_1, subject.city , subject.state].join(", ")
+    subject.to_s.should =~ %r{#{attrs}}
+  end
+
+  describe "Geocoding" do
+    before(:each) do
+      lat, long = 44.0589124, -121.2999967
+      @business, @geocode =Factory.build(:business), mock(Geocode, :latitude=>lat, :longitude=>long, :coordinates=>[lat,long])
+      @business.instance_variable_set(:@geocode, @geocode)
+    end
+    
+    it "should know its latitude" do
+      @business.latitude.should eql(@geocode.latitude)
+    end
+    
+    it "should know its longitude" do
+      @business.longitude.should eql(@geocode.longitude)      
+    end
+  end
 
   context 'validations' do
-
     it 'should verify that the secret code is a digit' do
       should validate_numericality_of(:secret_code)
     end
