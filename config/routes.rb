@@ -13,6 +13,8 @@ Pintme::Application.routes.draw do
 
   get "logout" => "authorizations#destroy"
 
+  get "redeem" => "pints#redeem"
+
   match "buy/:screen_name" => "pints#buy"
 
   # The priority is based upon order of creation:

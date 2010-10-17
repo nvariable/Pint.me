@@ -137,6 +137,9 @@ hr {
 .fload_right {
         float: right;
 }
+.phone_full_width {
+  width: 200px;
+}
 .pint_input {
 	font-size: 2em;
 	font-family: Helvetica, sans-serif;
@@ -149,6 +152,11 @@ hr {
 }
 .twitter {
 	
+}
+
+.get_beer {
+  display: none;
+  text-align: center;
 }
 /* SIGNUP */
 .container_box {
@@ -195,11 +203,13 @@ hr {
     padding: 48px 28px 0;
     width: 264px;
       }
-
-  #rr10sash {
+  .pint_counts {
     display: none;
   }
 
+  .get_beer{
+    display: block;
+  }
 	.toplinks {
 		margin-top: 0px;
 	}
