@@ -33,13 +33,13 @@ describe Authorization do
         end
 
         it "should not find the authorization" do
-          Authorization.find_from_hash({'provider'=>'facebook', 'uid'=>'18duawe128d'}).should be_nil        
+          Authorization.find_from_hash({'provider'=>'twitter', 'uid'=>'18duawe128d'}).should be_nil        
         end
       end
 
       describe "Creating an authorization from the omniauth response" do
         before(:each) do
-          @response= {'provider'=>'facebook', 'uid'=>'19129adadj1'}
+          @response= {'provider'=>'twitter', 'uid'=>'19129adadj1'}
           @user= Factory(:user)
           User.stub!(:create_from_hash!).and_return(@user)
         end
