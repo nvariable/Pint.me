@@ -17,4 +17,9 @@ $("#q").bind("keyup", function() {
     $(this).data('timer', wait);
   });
 
+$("#intro-video").hide();
+
+$(".video-toggle").click( function() {
+  $("#intro-video").toggle('fast');
+  });
 });
