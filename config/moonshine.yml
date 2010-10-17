@@ -20,10 +20,8 @@
 # defaults, but this allows you to add to them. Please file an issue at
 # http://github.com/railsmachine/moonshine/issues if there are additional gem
 # dependencies Moonshine should know about.
-#:apt_gems:
-#  :awesomegem:
-#    - awesome
-#    - libawesome-dev
+:apt_gems:
+  :nokogiri:
 
 :shared_config:
   - config/database.yml
