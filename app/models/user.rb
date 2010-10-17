@@ -1,15 +1,16 @@
 class User < ActiveRecord::Base
-  has_many :authorizations
-  validates_uniqueness_of :email
+  has_many :authorizations, :dependent=>:destroy
+  validates_uniqueness_of :email, :screen_name
   has_many :pints
   has_many :purchased_pints, :class_name => 'Pint', :foreign_key => "purchaser_id"
   
-  #Compatible with facebook only. Abstraction later for other providers
+  #Compatible with twitter only. Abstraction later for other providers
   def self.create_from_hash!(hash)
     create(
       :name   => hash['user_info']['name'],
       :token  => hash['credentials']['token'],
-      :email  => hash['extra']['user_hash']['email']
+      :secret => hash['credentials']['secret'],
+      :screen_name => hash['extra']['user_hash']['screen_name']
     )
   end
 
