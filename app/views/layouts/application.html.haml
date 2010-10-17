@@ -15,8 +15,16 @@
     = csrf_meta_tag
   %body
     %header
-      = image_tag "logo.png"
-      %h1.inline Pint.me
+      = image_tag "newpintblue.png"
+      %h1.inline
+        =link_to "Pint.me", :controller => "home"
       %p.align_right.toplinks
-        = link_to "Pint.me participants"
+        = link_to "Pint.me participants", :controller => "businesses"
     = yield
+    %footer  
+      .spacer
+      .small.align_right
+        Built by 
+        = mail_to "theguys@pint.me", "theguys@pint.me", :encode => "hex"
+        for Rails Rumble 2010.
+    

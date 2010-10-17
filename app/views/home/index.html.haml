@@ -1,17 +1,12 @@
-
 %article
   .spacer
   .signup
-    .form_box
-      .form_header
+    .container_box
+      .container_header
         %h3 Say thanks with a pint!
       %p Beer is good. People like to celebrate with beer. People like to buy buddies beer. Now you can buy beer with the click of a button.
       .spacer
       %p.align_right 
         = link_to "Log in through Facebook", "/auth/facebook", :class => "button blue"
-%footer  
-  .spacer
-  .small.align_right
-    Built by 
-    = mail_to "theguys@pint.me", "theguys@pint.me", :encode => "hex"
-    for Rails Rumble 2010.
+      .spacer
+      .container_footer

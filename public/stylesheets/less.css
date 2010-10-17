@@ -103,7 +103,11 @@ a {
 h1 {
   font-family: "bello-pro-1","bello-pro-2",sans-serif;
 }
-
+h1 a {
+	text-decoration: none;
+	font-family: "bello-pro-1","bello-pro-2",sans-serif;
+  
+}
 img {
 	border: none;
 }
@@ -117,9 +121,7 @@ hr {
 	font-weight: 900;
 	font-size: 1.5em;
 }
-.logo {
-	display: inline;
-}
+
 .toplinks {
 	margin-top: -37px;
 }
@@ -139,7 +141,7 @@ hr {
 	height: 1.5em;
 }
 /* SIGNUP */
-.form_box {
+.container_box {
 	padding: 30px;
 	border: 10px solid #b6b6b6;
 	background: #ffffff;
@@ -148,13 +150,13 @@ hr {
 	-moz-box-shadow: 0px 0px 5px #343434;
 	box-shadow: 0px 0px 5px #343434;
 }
-.form_header {
+.container_header {
 	color: #ffffff;
 	background: #343434;
 	margin: -30px -30px 30px -30px;
 	padding: 20px;
 }
-.form_footer {
+.container_footer {
 	background: #cfcfcf;
 	margin: 0px -30px -30px -30px;
 	padding: 20px;
