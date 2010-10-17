@@ -1,5 +1,24 @@
-%logo
-  //= image_tag "logo.png"
+%header
+  = image_tag "logo.png"
   %h1.inline Pint.me
-  %p.motto Say thanks with a pint!
-  =link_to "Sign up for free", {}, :class => "button green"
+%article
+  .intro
+    %h2 Say thanks with a pint!
+    %p Beer is good. People like to celebrate with beer. People like to buy buddies beer. Now you can buy beer with the click of a button.
+  %p.align_right 
+    = link_to "Log in"
+    &nbsp;
+    = link_to "Participating locations"
+  
+  .signup
+    .form_box
+      .form_header
+        %h3 Sign up
+      %p.align_right 
+        = link_to "Sign up for free", {}, :class => "button blue"
+%footer  
+  .spacer
+  .small.align_right
+    Built by 
+    = mail_to "theguys@pintme.com", "theguys@pintme.com", :encode => "hex"
+    for Rails Rumble 2010.
