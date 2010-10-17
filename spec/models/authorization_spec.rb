@@ -50,11 +50,11 @@ describe Authorization do
         
         it "should create a user if the user isn't specified" do
           User.should_receive(:create_from_hash!).with(@response).and_return(@user)
-          Authorization.create_from_hash(@response)
+          Authorization.create_from_hash!(@response)
         end
 
         it "should create the authorization with the user, uid, and provider" do
-          Authorization.create_from_hash(@response)    
+          Authorization.create_from_hash!(@response)    
           Authorization.find_by_user_id_and_uid_and_provider(@user.id, @response['uid'], @response['provider']).should_not be_nil      
         end
       end

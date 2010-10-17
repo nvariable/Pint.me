@@ -1,6 +1,6 @@
 Pintme::Application.routes.draw do
-  match 'auth/:provider/callback' => 'sessions#create'
-  resources :sessions
+  match 'auth/:provider/callback' => 'authorizations#create'
+  resources :authorizations
   resources :pints
 
   get "home/index"
