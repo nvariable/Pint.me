@@ -14,6 +14,7 @@ class Order < ActiveRecord::Base
     self.quantity.times do |i|
       self.purchaser.purchase_pint_for(self.user, self.id)
     end
+    tweetie(quantity,self.purchaser, self.user)
     self.update_attribute('date_paid', Time.now)
   end
 
@@ -28,5 +29,14 @@ class Order < ActiveRecord::Base
 
   def self.pint_price
     PINT_PRICE
+  end
+  
+  def tweetie(quantity, purchaser, recipient)
+    provider= Provider.instance
+    oauth = Twitter::OAuth.new(provider.configs['twitter']['consumer_key'], provider.configs['twitter']['consumer_secret'])
+    oauth.authorize_from_access(PINT_ME.token, PINT_ME.secret)
+    client = Twitter::Base.new(oauth)
+    plural= (quantity >1) ? 'pints' : 'pint'
+    client.update("@#{recipient.screen_name} was just given #{quantity} #{plural} from @#{recipient.screen_name}.")
   end
 end
