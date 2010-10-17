@@ -1,8 +1,10 @@
 %p.get_beer
-  - if current_user.pints.count > 0
-    = link_to raw("#{pluralize(current_user.pints.count, 'Pint')} <br /> Redeem a pint"), redeem_path, :class => "button green phone_full_width"
+  - if current_user.pints.available.count > 0
+    = link_to raw("#{pluralize(current_user.pints.available.count, 'Pint')} <br /> Redeem a pint"), redeem_path, :class => "button green phone_full_width"
 
 %article
+  - if flash[:error]
+    = flash[:error]
   .spacer
   .signup
     .container_box
