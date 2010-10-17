@@ -27,7 +27,7 @@ class User < ActiveRecord::Base
   end
 
   def place_order_for(recieving_user, quantity = 1)
-    self.orders.create(:user =>recieving_user, :quantity => quantity)  
+    self.orders.create(:user =>recieving_user, :quantity => quantity, :number => Order.generate_order_number)  
   end
 
   def self.create_from_screen_name(name = nil)
