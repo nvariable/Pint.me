@@ -52,7 +52,7 @@
           = "|" if current_user
         = link_to 'Log out', logout_url if current_user
         %span(class = "separator")
-          |
+          = "|" if current_user
         = link_to "Locations", :controller => "businesses"
     = yield
     %footer  
