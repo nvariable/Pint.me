@@ -11,6 +11,13 @@ describe Business do
     subject.to_s.should =~ %r{#{attrs}}
   end
 
+  it "should have a logo" do
+    `touch #{Business::LOGO_PATH}/logo.jpg`
+    subject.company_logo= 'logo.jpg'
+    subject.has_logo?.should be_true
+    `rm #{Business::LOGO_PATH}/logo.jpg`
+  end
+
   describe "Geocoding" do
     before(:each) do
       lat, long = 44.0589124, -121.2999967

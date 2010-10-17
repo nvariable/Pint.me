@@ -89,7 +89,7 @@ Default 5-column, 768 px layout for iPads, netbooks, and IE
 body {
   background: rgb(232,232,232);
   padding: 60px 36px 0;
-  font-family: "adobe-text-pro-1","adobe-text-pro-2",sans-serif;
+  font-family: "adelle-1","adelle-2",serif;
 	width: 696px;
 	position: relative;
 	margin: 0 auto;
@@ -116,6 +116,16 @@ hr {
 	color: #cfcfcf;
 	height: 1px;
 }
+
+#secret_input {
+        font-size: 8em;
+	font-family: Helvetica, sans-serif;
+	width: 100%;	
+	font-weight: bold;
+
+}
+
+
 .motto {
 	font-family: "museo-sans-1","museo-sans-2",sans-serif;
 	font-weight: 900;
@@ -206,7 +216,11 @@ hr {
   .pint_counts {
     display: none;
   }
-
+  h1 {
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -2px;
+  }
   .get_beer{
     display: block;
   }
