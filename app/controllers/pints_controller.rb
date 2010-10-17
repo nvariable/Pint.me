@@ -80,11 +80,11 @@ class PintsController < ApplicationController
 
   private
   def gateway
-    @config ||= PaymentGateway.instance.configs[Rails.env]
+    #@config ||= PaymentGateway.instance.configs[Rails.env]
     @gateway ||= ActiveMerchant::Billing::PaypalExpressGateway.new(
-      :login => @config['login'],
-      :password => @config['password'],
-      :signature => @config['signature']
+      :login => 'login',
+      :password => 'password',
+      :signature => 'signature'
     )
   end
 
