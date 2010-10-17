@@ -31,6 +31,10 @@ a img {border: 0;}
 figure {position: relative;}
 figure img {width: 100%;}
 
+/* QUIRKS MODE */
+html {height: 100%;}
+body { height: 100%; margin: 0px; padding: 0px }
+#map_canvas { height: 80% }
 
 
 /*
