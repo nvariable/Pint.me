@@ -81,6 +81,8 @@
             = current_user.pints.count
             | Pints Purchased:
             = current_user.purchased_pints.count
+            |
+            = link_to "Get Widget", widgets_url
     = yield
     %footer  
       .spacer

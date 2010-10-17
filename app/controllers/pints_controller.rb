@@ -1,5 +1,5 @@
 class PintsController < ApplicationController
-  before_filter :signed_in?
+  before_filter :require_login
   def index
     @pints = Pint.all
   end
