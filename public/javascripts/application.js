@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 $("#q").bind("keyup", function() {
     clearTimeout($.data(this, 'timer'));
-    var wait = setTimeout(search, 500);
+    var wait = setTimeout(search, 1000);
     $(this).data('timer', wait);
   });
 

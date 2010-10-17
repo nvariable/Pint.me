@@ -54,6 +54,12 @@
         %span(class = "separator")
           = "|" if current_user
         = link_to "Locations", :controller => "businesses"
+        - if current_user
+          %p.align_right.pint_counts
+            My Pints:
+            = current_user.pints.count
+            | Pints Purchased:
+            = current_user.purchased_pints.count
     = yield
     %footer  
       .spacer
