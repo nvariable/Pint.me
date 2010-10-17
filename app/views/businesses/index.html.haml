@@ -9,12 +9,3 @@
       %p 
         We are adding locations continuously so please continue to check back for updates.
       #map_canvas{:style=>'height: 76%;'}
-        
-:javascript
-  $(document).ready(function(){
-    $('#partnered').click(function(){
-      clearMarkers();
-      addPartneredMarkers(map);
-      return false;
-    })
-  })

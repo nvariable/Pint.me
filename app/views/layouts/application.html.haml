@@ -20,27 +20,31 @@
         - @businesses.each do |biz|
           var lat= #{biz.latitude};
           var long= #{biz.longitude};
-          var marker= {latitude: lat, longitude: long, icon: partnerIcon, title: '#{escape_javascript(biz.name)}'};
+          var title= '#{escape_javascript(biz.name)}';
+          var html= '<div style=\'font-size: 14px;\'><h5>' + title + '</h5>#{biz.street_1}<br/>#{biz.city},#{biz.state}<br />#{biz.zip}</div>'
+          var marker= {latitude: lat, longitude: long, icon: partnerIcon, title: title, html: html};
           addMarker(marker);          
         }
         
       :javascript
-        function setLocation(position, map){
-          var p = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-          map.panTo(p);
-        };
-                
+        function attachWindow(map, marker, html){
+         var infowindow = new google.maps.InfoWindow({ 
+           content: html, size: new google.maps.Size(20,20) 
+         });
+         infowindow.open(map,marker);
+        }
+        
         var map;
         var markers=[];
         var partnerIcon = 'images/marker_icon.png';
 
         function addMarker(marker){
           var myLatlng = new google.maps.LatLng(marker.latitude, marker.longitude);
-          var marker = new google.maps.Marker({position: myLatlng, icon: marker.icon, title: marker.title});
-          markers.push(marker);
+          var current_marker = new google.maps.Marker({position: myLatlng, icon: marker.icon, title: marker.title, clickable: true});
+          markers.push(current_marker);
           // add the marker to the map
-          marker.setMap(map);  
-          // google.maps.event.addListener(marker, 'click', function() { });        
+          current_marker.setMap(map);  
+          google.maps.event.addListener(current_marker, 'click', function(){attachWindow(map, current_marker, marker.html)});        
         }
 
         function clearMarkers(){
