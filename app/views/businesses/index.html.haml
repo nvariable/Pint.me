@@ -5,8 +5,16 @@
       .container_header
         %h3 Locations
       %p
-        Currently we've partnered with a <a href='#bend'>few locations</a> in Bend, OR.
+        Currently we've partnered with a few locations in Bend, OR displayed below.  
       %p 
-        However, we've listed the lounges in your area so you can visit them and tell them to sign up with Pint.me!
+        We are adding locations continuously so please continue to check back for updates.
       #map_canvas{:style=>'height: 76%;'}
         
+:javascript
+  $(document).ready(function(){
+    $('#partnered').click(function(){
+      clearMarkers();
+      addPartneredMarkers(map);
+      return false;
+    })
+  })
