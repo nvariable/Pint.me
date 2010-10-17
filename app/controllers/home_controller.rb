@@ -1,7 +1,10 @@
 class HomeController < ApplicationController
-  before_filter :signed_in?, :only => :dashboard
+  before_filter :signed_in?, :except => :index
 
   def index
+    if current_user
+      redirect_to home_dashboard_path
+    end
   end
 
   def dashboard
