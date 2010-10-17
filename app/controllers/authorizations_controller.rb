@@ -10,7 +10,5 @@ class AuthorizationsController < ApplicationController
     end
     # Log the authorizing user in.
     self.current_user = @auth.user
-    
-    render :text => "Welcome, #{current_user.name}."
   end
 end
