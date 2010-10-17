@@ -1,21 +1,22 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>Pint.me</title>
+!!! 5
+%html
+  %head
+    %meta{:charset => "utf-8"}
+    %title Pint.me
     <script type="text/javascript" src="http://use.typekit.com/dvf6frb.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <%= stylesheet_link_tag :all %>
+    = stylesheet_link_tag :all
     <meta name="viewport" content="initial-scale=1.0, width=device-width, maximum-scale=1.0"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
-    <%= javascript_include_tag :defaults %>
-    <%= csrf_meta_tag %>
-  </head>
-
-  <body>
-    <%= yield %>
-  </body>
-</html>
+    = javascript_include_tag :defaults
+    = csrf_meta_tag
+  %body
+    %header
+      = image_tag "logo.png"
+      %h1.inline Pint.me
+      %p.align_right.toplinks
+        = link_to "Pint.me participants"
+    = yield
