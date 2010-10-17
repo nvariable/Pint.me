@@ -29,11 +29,42 @@ describe User do
     user.new_record?.should be_false
     [:name, :email, :token].each{|a| user.send(a).should_not be_nil}
   end
-  
+
   it "should update the token" do
     user= Factory(:user, :token=>nil)
     user.update_token(@response)
     user.reload
     user.token.should_not be_nil
+  end
+  
+  context "associations" do
+    it {should have_many :pints }
+    it {should have_many :purchased_pints }
+  end
+
+  context "purchasing pints" do
+    before(:each) do
+      @user = Factory(:user)
+      @user2 = Factory(:user)
+    end 
+
+    it "should mark a pint as purchased by a user" do
+      @user.purchase_pint_for(@user2)
+      @user.purchased_pints.count.should == 1
+      @user2.pints.first.purchaser.should == @user
+    end
+  end
+
+  context "receiving pints" do
+    before(:each) do
+      @current_user = Factory(:user)
+      @purchaser = Factory(:user)
+    end
+
+    it "should increase their pints count" do
+      @purchaser.purchase_pint_for(@current_user)
+      @current_user.pints.count.should == 1
+      @current_user.pints.first.purchaser.should == @purchaser
+    end
   end
 end
