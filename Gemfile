@@ -8,7 +8,7 @@ gem 'omniauth'
 gem 'mongrel', '1.2.0.pre2'
 gem 'haml'
 gem 'uuid'
-gem 'fb_graph'
+gem 'twitter'
 
 group :development, :test do
   gem 'shoulda'
