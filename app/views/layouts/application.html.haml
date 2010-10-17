@@ -17,39 +17,45 @@
     - if @enable_gmap
       %script{:type=>"text/javascript", :src=>'http://maps.google.com/maps/api/js?sensor=false'}
       %script{:type=>"text/javascript"}                
-        function addMarkers(map){
+        function addPartneredMarkers(map){
         - @businesses.each do |biz|
           var lat= #{biz.latitude};
           var long= #{biz.longitude};
-          var myLatlng = new google.maps.LatLng(lat, long);
-          var marker = new google.maps.Marker({position: myLatlng, icon: icon, title: '#{escape_javascript(biz.name)}'});
-          markers.push(marker);
-          // add the marker to the map
-          marker.setMap(map);        
+          var title= '#{escape_javascript(biz.name)}';
+          var html= '<div style=\'font-size: 14px;\'><h5>' + title + '</h5>#{biz.street_1}<br/>#{biz.city},#{biz.state}<br />#{biz.zip}</div>'
+          var marker= {latitude: lat, longitude: long, icon: partnerIcon, title: title, html: html};
+          addMarker(marker);          
         }
         
       :javascript
-        // function setLocation(position, map){
-        //   var p = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-        //   geoLocation.latitude = position.coords.latitude;
-        //   geoLocation.longitude = position.coords.longitude;
-        //   map.panTo(p);
-        // };
-        // if(navigator.geolocation){
-        //   navigator.geolocation.getCurrentPosition(setLocation);
-        // };
-      
+        function attachWindow(map, marker, html){
+         var infowindow = new google.maps.InfoWindow({ 
+           content: html, size: new google.maps.Size(20,20) 
+         });
+         infowindow.open(map,marker);
+        }
+        
         var map;
         var markers=[];
-        var icon = 'images/marker_icon.png';
+        var partnerIcon = 'images/marker_icon.png';
+
+        function addMarker(marker){
+          var myLatlng = new google.maps.LatLng(marker.latitude, marker.longitude);
+          var current_marker = new google.maps.Marker({position: myLatlng, icon: marker.icon, title: marker.title, clickable: true});
+          markers.push(current_marker);
+          // add the marker to the map
+          current_marker.setMap(map);  
+          google.maps.event.addListener(current_marker, 'click', function(){attachWindow(map, current_marker, marker.html)});        
+        }
 
         function clearMarkers(){
           for(var i=0; i < markers.length; i++){
             markers[i].setMap(null);
           }
-        }
+        }        
       
         function gMapInit(){
+          //default to Bend,OR
           var latlng = new google.maps.LatLng(44.0583333, -121.3141667);
           var myOptions = {
             zoom: 14,
@@ -57,7 +63,7 @@
             mapTypeId: google.maps.MapTypeId.ROADMAP
           };
           map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-          addMarkers(map);
+          addPartneredMarkers(map);
         }
       
         $(document).ready(function(){
