@@ -1,21 +1,21 @@
 %header
-  = image_tag "logo.png"
+  = image_tag "newpint.png"
   %h1.inline Pint.me
   %p.align_right.toplinks
-    = link_to "Pint.me participants"
+    = link_to "Pint.me locations"
 %article
   .spacer
   .signup
     .form_box
       .form_header
         %h3 Say thanks with a pint!
-      %p.intro
-        %p Beer is good. People like to celebrate with beer. People like to buy buddies beer. Now you can buy beer with the click of a button.
+      %p Beer is good. People like to celebrate with beer. People like to buy buddies beer. Now you can buy beer with the click of a button.
+      .spacer
       %p.align_right 
         = link_to "Log in through Facebook", "/auth/facebook", :class => "button blue"
 %footer  
   .spacer
   .small.align_right
     Built by 
-    = mail_to "theguys@pintme.com", "theguys@pintme.com", :encode => "hex"
+    = mail_to "theguys@pint.me", "theguys@pint.me", :encode => "hex"
     for Rails Rumble 2010.
