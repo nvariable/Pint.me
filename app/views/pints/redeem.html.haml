@@ -1,0 +1,7 @@
+%article
+  .spacer
+  .signup
+    .container_box
+      = form_tag("pints/confirm_redeem", :method => :post) do
+        = password_field_tag "secret_input", nil, :name => "secret_phone", :size => 4, :maxlength => 4
+        = submit_tag "Confirm Pint", :class => "button green phone_full_width"
