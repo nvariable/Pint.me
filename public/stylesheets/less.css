@@ -133,6 +133,12 @@ hr {
 .align_right {
 	text-align: right;
 }
+.float_left {
+        float: left;
+}
+.fload_right {
+        float: right;
+}
 .pint_input {
 	font-size: 2em;
 	font-family: Helvetica, sans-serif;
