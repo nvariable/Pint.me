@@ -14,7 +14,7 @@ class Order < ActiveRecord::Base
     self.quantity.times do |i|
       self.purchaser.purchase_pint_for(self.user, self.id)
     end
-    tweetie(quantity,self.purchaser, self.user)
+    tweetie(quantity,self.purchaser, self.user) rescue nil #Suppress errors momentarily Future: bubble to controller/notify or log
     self.update_attribute('date_paid', Time.now)
   end
 
