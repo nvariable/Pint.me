@@ -10,4 +10,8 @@ class User < ActiveRecord::Base
       :email  => hash['extra']['user_hash']['email']
     )
   end
+  
+  def update_token(hash)
+    self.update_attribute(:token, hash['credentials']['token'])
+  end
 end

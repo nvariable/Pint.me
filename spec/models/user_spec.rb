@@ -19,10 +19,21 @@ describe User do
           "email"=>"tim.linquist@gmail.com"
     }}}
   end
+  
+  after(:each) do
+    User.destroy_all
+  end
 
   it "should create a user with the name, uid, token, and email" do
     user= User.create_from_hash!(@response)
     user.new_record?.should be_false
     [:name, :email, :token].each{|a| user.send(a).should_not be_nil}
+  end
+  
+  it "should update the token" do
+    user= Factory(:user, :token=>nil)
+    user.update_token(@response)
+    user.reload
+    user.token.should_not be_nil
   end
 end
