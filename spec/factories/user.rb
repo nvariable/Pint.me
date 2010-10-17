@@ -11,5 +11,5 @@ Factory.define :user do |u|
   u.name Faker::Name.name
   u.token UUID.new.generate.to_s
   u.secret UUID.new.generate.to_s
-  u.screen_name { Factory.next(:email) }
+  u.screen_name { Factory.next(:screen_name) }
 end
