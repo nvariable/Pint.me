@@ -10,5 +10,8 @@ class AuthorizationsController < ApplicationController
     end
     # Log the authorizing user in.
     self.current_user = @auth.user
+    
+    redirect_to home_dashboard_url
+
   end
 end
