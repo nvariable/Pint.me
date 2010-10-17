@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101017162739) do
+ActiveRecord::Schema.define(:version => 20101017171758) do
 
   create_table "authorizations", :force => true do |t|
     t.string   "provider"
@@ -38,11 +38,17 @@ ActiveRecord::Schema.define(:version => 20101017162739) do
     t.integer  "user_id"
     t.integer  "quantity"
     t.string   "ip_address"
+    t.string   "number"
     t.string   "transaction_id"
     t.datetime "date_paid"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "orders", ["number"], :name => "index_orders_on_number"
+  add_index "orders", ["purchaser_id"], :name => "index_orders_on_purchaser_id"
+  add_index "orders", ["transaction_id"], :name => "index_orders_on_transaction_id"
+  add_index "orders", ["user_id"], :name => "index_orders_on_user_id"
 
   create_table "pints", :force => true do |t|
     t.integer  "user_id"
