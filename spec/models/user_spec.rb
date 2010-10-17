@@ -31,7 +31,6 @@ describe User do
     it {should have_many :purchased_pints }
   end
 
-
   context "purchasing pints" do
     before(:each) do
       @user = Factory(:user)
@@ -41,6 +40,7 @@ describe User do
     it "should mark a pint as purchased by a user" do
       @user.purchase_pint_for(@user2)
       @user.purchased_pints.count.should == 1
+      @user2.pints.first.purchaser.should == @user
     end
   end
 end
