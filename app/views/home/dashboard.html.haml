@@ -5,7 +5,7 @@
       .container_header
         %h3 Who do you want to purchase a pint for?
       = form_tag("/home/search", :method => :get, :remote => true, :id => "twitter_search")
-      = text_field_tag 'q'
+      = text_field_tag 'q', {}, :class => "pint_input"
       .spacer
       #search-results
       %p

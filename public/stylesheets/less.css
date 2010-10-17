@@ -131,11 +131,12 @@ hr {
 .align_right {
 	text-align: right;
 }
-.login_input, .signup_input {
+.pint_input {
 	font-size: 2em;
-	font-family: ColabReg, Helvetica, sans-serif;
+	font-family: Helvetica, sans-serif;
 	color: #0095cd;
 	width: 100%;	
+	font-weight: bold;
 }
 .spacer {
 	height: 1.5em;
@@ -170,12 +171,6 @@ hr {
 .signup {
 
 }
-
-#q {
-	line-height: 75px;
-	font-size: 74px;
-}
-
 
 /* 
 2-column, 320 px layout for smartphones
