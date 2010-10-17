@@ -36,9 +36,12 @@
         =link_to "Pint.me", :controller => "home"
       %p.align_right.toplinks
         = current_user.name if current_user
-        = "|" if current_user
-        = link_to 'Logout', logout_url if current_user
-        = link_to "Pint.me participants", :controller => "businesses"
+        %span(class = "separator")
+          = "|" if current_user
+        = link_to 'Log out', logout_url if current_user
+        %span(class = "separator")
+          |
+        = link_to "Locations", :controller => "businesses"
     = yield
     %footer  
       .spacer
@@ -46,6 +49,7 @@
         Built by 
         = mail_to "theguys@pint.me", "theguys@pint.me", :encode => "hex"
         for Rails Rumble 2010.
+        <a href="http://www.twitter.com/"><img src="http://twitter-badges.s3.amazonaws.com/t_small-a.png" alt="Twitter"/></a>
     <script src="http://static.getclicky.com/js" type="text/javascript"></script>
     <script type="text/javascript">clicky.init(262229);</script>
     <noscript><p><img alt="Clicky" width="1" height="1" src="http://in.getclicky.com/262229ns.gif" /></p></noscript>
