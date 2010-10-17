@@ -44,9 +44,11 @@ ActiveRecord::Schema.define(:version => 20101017205410) do
     t.datetime "date_paid"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "paypal_token"
   end
 
   add_index "orders", ["number"], :name => "index_orders_on_number"
+  add_index "orders", ["paypal_token"], :name => "index_orders_on_paypal_token"
   add_index "orders", ["purchaser_id"], :name => "index_orders_on_purchaser_id"
   add_index "orders", ["transaction_id"], :name => "index_orders_on_transaction_id"
   add_index "orders", ["user_id"], :name => "index_orders_on_user_id"

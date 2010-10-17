@@ -11,11 +11,22 @@ describe Order do
     it { should validate_presence_of :number }
   end
 
-  context 'callbacks' do
-    context 'before create' do
-      it 'should generate a unique order number' do
-        
-      end
+  context 'complete payment' do
+    it 'should set the date paid attirbute' do
+      @order.send_pints
+      @order.date_paid.should_not be_nil
+    end
+    it 'should increase pints' do
+      @order2 = Factory.create(:order)
+      lambda{
+        @order2.send_pints
+      }.should change(Pint, :count).by(1)
+    end
+  end
+
+  context 'class methods' do
+    it 'should give a pint price in pennies' do
+      Order.pint_price.should == 500
     end
   end
 end
