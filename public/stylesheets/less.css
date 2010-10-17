@@ -6,7 +6,6 @@ http://lessframework.com
  */
 
 
-
 /* 
 Resets
 ------
@@ -34,8 +33,7 @@ figure img {width: 100%;}
 /* QUIRKS MODE */
 html {height: 100%;}
 body { height: 100%; margin: 0px; padding: 0px }
-#map_canvas { height: 80% }
-
+#map_canvas { height: 70% }
 
 /*
 Typography presets

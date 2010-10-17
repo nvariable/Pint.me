@@ -15,15 +15,15 @@ describe Business do
     before(:each) do
       lat, long = 44.0589124, -121.2999967
       @business, @geocode =Factory.build(:business), mock(Geocode, :latitude=>lat, :longitude=>long, :coordinates=>[lat,long])
-      @business.instance_variable_set(:@geocode, @geocode)
+      @business.stub!(:geocode).and_return(@geocode)
     end
     
     it "should know its latitude" do
-      @business.latitude.should eql(@geocode.latitude)
+      @business.latitude.should be_an_instance_of(Float)
     end
     
     it "should know its longitude" do
-      @business.longitude.should eql(@geocode.longitude)      
+      @business.longitude.should be_an_instance_of(Float)      
     end
   end
 

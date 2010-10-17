@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-  before_filter :signed_in?, :except => :index
+  before_filter :require_login, :except => [:index]
 
   def index
     if current_user
@@ -17,5 +17,8 @@ class HomeController < ApplicationController
     client = Twitter::Base.new(oauth)
     @users = client.user_search params[:q] if params[:q].length > 1
     render :layout => false
+  end
+
+  def widgets
   end
 end

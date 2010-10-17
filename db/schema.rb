@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101017041039) do
+ActiveRecord::Schema.define(:version => 20101017171758) do
 
   create_table "authorizations", :force => true do |t|
     t.string   "provider"
@@ -33,6 +33,23 @@ ActiveRecord::Schema.define(:version => 20101017041039) do
     t.datetime "updated_at"
   end
 
+  create_table "orders", :force => true do |t|
+    t.integer  "purchaser_id"
+    t.integer  "user_id"
+    t.integer  "quantity"
+    t.string   "ip_address"
+    t.string   "number"
+    t.string   "transaction_id"
+    t.datetime "date_paid"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "orders", ["number"], :name => "index_orders_on_number"
+  add_index "orders", ["purchaser_id"], :name => "index_orders_on_purchaser_id"
+  add_index "orders", ["transaction_id"], :name => "index_orders_on_transaction_id"
+  add_index "orders", ["user_id"], :name => "index_orders_on_user_id"
+
   create_table "pints", :force => true do |t|
     t.integer  "user_id"
     t.integer  "business_id"
@@ -40,6 +57,7 @@ ActiveRecord::Schema.define(:version => 20101017041039) do
     t.integer  "purchaser_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "order_id"
   end
 
   create_table "users", :force => true do |t|
@@ -50,6 +68,8 @@ ActiveRecord::Schema.define(:version => 20101017041039) do
     t.string   "token"
     t.string   "screen_name"
     t.string   "secret"
+    t.integer  "purchased_count", :default => 0
+    t.integer  "pints_count",     :default => 0
   end
 
 end

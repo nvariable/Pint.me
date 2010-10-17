@@ -53,6 +53,7 @@ describe User do
   context "associations" do
     it {should have_many :pints }
     it {should have_many :purchased_pints }
+    it {should have_many :orders}
   end
 
   context "purchasing pints" do
@@ -78,6 +79,18 @@ describe User do
       @purchaser.purchase_pint_for(@current_user)
       @current_user.pints.count.should == 1
       @current_user.pints.first.purchaser.should == @purchaser
+    end
+  end
+
+  context "order pints" do
+    before(:each) do
+      @user = Factory(:user)
+      @user2 = Factory(:user)
+    end
+    it "should add an order for pints" do
+      lambda{
+        @user.place_order_for(@user2)
+      }.should change(@user.orders, :count).by(1)
     end
   end
 end

@@ -4,5 +4,6 @@
       = image_tag u.profile_image_url, :size => "50x50"
       %h4
         = u.name
-      = link_to "http://twitter.com/#{u.screen_name}"
+      %h5
+        = link_to "@#{u.screen_name}", "http://twitter.com/#{u.screen_name}"
     %br
