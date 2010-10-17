@@ -180,6 +180,7 @@ DEPENDENCIES
   capistrano
   factory_girl_rails
   faker
+  graticule
   haml
   jquery-rails
   mongrel (= 1.2.0.pre2)
