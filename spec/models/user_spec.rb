@@ -43,4 +43,17 @@ describe User do
       @user2.pints.first.purchaser.should == @user
     end
   end
+
+  context "receiving pints" do
+    before(:each) do
+      @current_user = Factory(:user)
+      @purchaser = Factory(:user)
+    end
+
+    it "should increase their pints count" do
+      @purchaser.purchase_pint_for(@current_user)
+      @current_user.pints.count.should == 1
+      @current_user.pints.first.purchaser.should == @purchaser
+    end
+  end
 end
