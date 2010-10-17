@@ -44,6 +44,33 @@ class PintsController < ApplicationController
     end
   end
 
+  def redeem
+    unless current_user.pints.available.count > 0
+      flash[:error] = "You have no pints"
+      redirect_to root_url
+    end
+  end
+
+  def confirm_redeem
+    business_secret = params[:secret_input]
+    if current_user.pints.available.count > 0
+      @business = Business.find_by_secret_code(business_secret)
+      if @business
+        pint =current_user.pints.available.first
+        pint.business = @business
+        pint.redemption_date = Date.today
+        pint.save
+        render :action => "enjoy"
+      else
+        flash[:error] = "Invalid Code"
+        redirect_to redeem_url
+      end
+    else
+      flash[:error] = "You have no pints"
+      redirect_to root_url
+    end
+  end
+
   private
   def gateway
     @gateway ||= ActiveMerchant::Billing::PaypalExpressGateway.new(
@@ -53,7 +80,4 @@ class PintsController < ApplicationController
     )
   end
 
-  def redeem
-    
-  end
 end

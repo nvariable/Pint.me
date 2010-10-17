@@ -86,7 +86,7 @@
         - if current_user
           %p.align_right.pint_counts
             My Pints:
-            = current_user.pints.count
+            = current_user.pints.available.count
             %span(class = "separator")
               = "|"
             Pints Purchased:
