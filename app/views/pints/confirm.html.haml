@@ -5,3 +5,5 @@
       .container_header
         %h3 Pint Sent!
       %p Thanks for sending #{@order.user.screen_name} a pint!  We have dispatched a notice to them on how to get their beer!
+      .spacer      
+      %p.align_right= link_to "Get more pints!", home_index_path, :class => "button blue"
