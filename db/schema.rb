@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101016233136) do
+ActiveRecord::Schema.define(:version => 20101017041039) do
 
   create_table "authorizations", :force => true do |t|
     t.string   "provider"
@@ -48,6 +48,8 @@ ActiveRecord::Schema.define(:version => 20101016233136) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "token"
+    t.string   "screen_name"
+    t.string   "secret"
   end
 
 end
