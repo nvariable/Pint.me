@@ -1,6 +1,12 @@
-%h2 Buy #{@recipient.screen_name} a pint
-%p Gosh darn that is might interwebs karma of you!  Fill out the form below to send a cold one to #{@recipient.screen_name}
-= form_for @pint, :url => { :action => 'create' } do |f|
-  = f.hidden_field :user_id
-  = f.hidden_field :purchaser_id, :value => @current_user.id
-  = f.submit :value => 'Send Pint'
+%article
+  .spacer
+  .signup
+    .container_box
+      .container_header
+        %h3 Buy #{@recipient.screen_name} a pint!
+      %p Gosh darn that is mighty interwebs karma of you!  You are a few clicks away from sending a cold one to #{@recipient.screen_name}.  Click the button below to complete your transaction at PayPal.
+      %p The cost of this pint is *only* #{number_to_currency(Order.pint_price/100)}!
+      = form_for @pint, :url => { :action => 'create' } do |f|
+        = f.hidden_field :user_id
+        = f.hidden_field :purchaser_id, :value => @current_user.id
+        = f.submit :value => "Send Pint via PayPal", :class => "button green phone_full_width"

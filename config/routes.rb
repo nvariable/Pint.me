@@ -16,6 +16,7 @@ Pintme::Application.routes.draw do
   get "redeem" => "pints#redeem"
 
   match "buy/:screen_name" => "pints#buy"
+  match "checkout/confirm" => "pints#confirm", :as => :confirm
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

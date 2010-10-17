@@ -10,6 +10,7 @@ gem 'haml'
 gem 'uuid'
 gem 'twitter'
 gem 'graticule'
+gem 'activemerchant'
 
 group :development, :test do
   gem 'shoulda'
