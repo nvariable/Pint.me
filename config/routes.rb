@@ -14,6 +14,7 @@ Pintme::Application.routes.draw do
   get "logout" => "authorizations#destroy"
 
   get "redeem" => "pints#redeem"
+  post "pints/confirm_redeem"
 
   match "buy/:screen_name" => "pints#buy"
 
