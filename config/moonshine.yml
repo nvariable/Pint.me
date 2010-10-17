@@ -22,6 +22,8 @@
 # dependencies Moonshine should know about.
 :apt_gems:
   :nokogiri:
+    - libxml2-dev
+    - libxslt1-dev
 
 :shared_config:
   - config/database.yml
