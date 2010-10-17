@@ -87,15 +87,13 @@ Default 5-column, 768 px layout for iPads, netbooks, and IE
  */
 
 body {
-  background: rgb(232,232,232) url(/images/bkgrnd.png);
+  background: rgb(232,232,232);
   padding: 60px 36px 0;
   font-family: "adobe-text-pro-1","adobe-text-pro-2",sans-serif;
 	width: 696px;
 	position: relative;
 	margin: 0 auto;
 }
-
-	
 a, h2, h3 {
 	font-family: "museo-sans-1","museo-sans-2",sans-serif;
 }
@@ -163,7 +161,7 @@ hr {
 }
 .container_header {
 	color: #ffffff;
-	background: #343434;
+	background: #283041;
 	margin: -30px -30px 30px -30px;
 	padding: 20px;
 }
@@ -182,6 +180,8 @@ hr {
 	{
 		color: #b6b6b6;
 	}
+.footer {
+}
 /* 
 2-column, 320 px layout for smartphones
 ---------------------------------------
@@ -202,9 +202,6 @@ hr {
 
 	.toplinks {
 		margin-top: 0px;
-	}
-	.small {
-		color: #ffffff;
 	}
 }
 
