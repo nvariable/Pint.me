@@ -6,6 +6,7 @@ Pintme::Application.routes.draw do
   resources :pints
 
   get "home/index"
+  get "home/dashboard"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
