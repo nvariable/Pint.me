@@ -5,10 +5,15 @@ class CreateOrders < ActiveRecord::Migration
       t.integer :user_id
       t.integer :quantity
       t.string :ip_address
+      t.string :number
       t.string :transaction_id
       t.datetime :date_paid
       t.timestamps
     end
+    add_index :orders, :user_id
+    add_index :orders, :purchaser_id
+    add_index :orders, :number
+    add_index :orders, :transaction_id
     add_column :pints, :order_id, :integer
   end
 
