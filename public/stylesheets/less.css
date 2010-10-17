@@ -120,6 +120,9 @@ hr {
 .logo {
 	display: inline;
 }
+.toplinks {
+	margin-top: -20px;
+}
 .inline {
 	display: inline;
 }
@@ -181,6 +184,9 @@ hr {
     display: none;
   }
 
+	.toplinks {
+		margin-top: 0px;
+	}
 }
 
 
