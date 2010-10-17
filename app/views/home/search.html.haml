@@ -1,4 +1,7 @@
-- @user.each do |u|
-  = image_tag u.profile_image_url
-  = u.name
-  = u.screen_name
+- @users.each do |u|
+  %span
+    = image_tag u.profile_image_url, :size => "50x50"
+    %h4
+      = u.name
+    = link_to "http://twitter.com/#{u.screen_name}"
+  %br
