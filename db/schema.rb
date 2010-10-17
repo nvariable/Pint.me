@@ -20,6 +20,19 @@ ActiveRecord::Schema.define(:version => 20101016233136) do
     t.datetime "updated_at"
   end
 
+  create_table "businesses", :force => true do |t|
+    t.string   "name"
+    t.string   "street_1"
+    t.string   "street_2"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip"
+    t.string   "report_email"
+    t.integer  "secret_code"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "pints", :force => true do |t|
     t.integer  "user_id"
     t.integer  "business_id"
