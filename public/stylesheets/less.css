@@ -164,10 +164,6 @@ hr {
 .spacer {
 	height: 1.5em;
 }
-.twitter {
-	
-}
-
 .get_beer {
   display: none;
   text-align: center;
@@ -198,10 +194,9 @@ hr {
 .username {
 	background: #ffffff;
 }
-.separator
-	{
-		color: #b6b6b6;
-	}
+.separator{
+	color: #b6b6b6;
+}
 
 
 /* 

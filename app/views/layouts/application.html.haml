@@ -77,7 +77,7 @@
         })
   %body
     %header
-      = image_tag "logo.png"
+      /= image_tag "logo.png"
       %h1.inline
         =link_to "Pint.me", :controller => "home"
       %p.align_right.toplinks
@@ -88,7 +88,7 @@
           = link_to 'Log out', logout_url if current_user
           %span(class = "separator")
             = "|" if current_user
-        = link_to "Locations", :controller => "businesses"
+        = link_to "FIND LOCATIONS", :controller => "businesses"
         - if current_user
           %p.align_right.pint_counts
             My Pints:
@@ -106,10 +106,12 @@
       Built by 
       = mail_to "theguys@pint.me", "theguys@pint.me", :encode => "hex"
       for Rails Rumble 2010.
-      <a href="http://www.twitter.com/pintme"><img src="http://twitter-badges.s3.amazonaws.com/t_small-a.png" alt="Follow Pint.me on Twitter"/></a>
-    %footer
     <script src="http://static.getclicky.com/js" type="text/javascript"></script>
     <script type="text/javascript">clicky.init(262229);</script>
     <noscript><p><img alt="Clicky" width="1" height="1" src="http://in.getclicky.com/262229ns.gif" /></p></noscript>
+    
+    <script type="text/javascript" src="//asset0.zendesk.com/external/zenbox/zenbox-2.0.js"></script>
+    <style type="text/css" media="screen, projection">@import url(//asset0.zendesk.com/external/zenbox/zenbox-2.0.css);</style>
+    <script type="text/javascript">if (typeof(Zenbox) !== "undefined") {Zenbox.init({dropboxID:   "1099",url:         "pintme.zendesk.com",tabID:       "ask_us",tabColor:    "black",tabPosition: "Right"});}</script>
     
 
