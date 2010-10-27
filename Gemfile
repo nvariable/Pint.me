@@ -11,6 +11,7 @@ gem 'uuid'
 gem 'twitter'
 gem 'graticule'
 gem 'activemerchant'
+gem 'rack_clicky'
 
 group :development, :test do
   gem 'shoulda'
