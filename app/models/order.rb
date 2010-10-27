@@ -37,7 +37,6 @@ class Order < ActiveRecord::Base
     oauth.authorize_from_access(PINT_ME.token, PINT_ME.secret)
     client = Twitter::Base.new(oauth)
     plural= (quantity >1) ? 'pints' : 'pint'
-    client.update("@#{recipient.screen_name} was just given #{quantity} #{plural} from @#{purchaser.screen_name}. Visit http://pintme.com to redeem your pint.")
-    client.update("#{Pint.count} pints have been given so far!")
+    client.update("Enjoy! @#{recipient.screen_name} was just given #{quantity} #{plural} from @#{purchaser.screen_name}. Visit http://pint.me to redeem your pint.")
   end
 end
