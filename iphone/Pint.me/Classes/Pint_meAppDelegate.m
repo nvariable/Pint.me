@@ -3,7 +3,7 @@
 //  Pint.me
 //
 //  Created by Mark Turner on 10/29/10.
-//  Copyright 2010 Western Communications. All rights reserved.
+//  Copyright 2010 Pint.me. All rights reserved.
 //
 
 #import "Pint_meAppDelegate.h"
