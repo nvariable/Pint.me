@@ -16,6 +16,7 @@ class HomeController < ApplicationController
     oauth.authorize_from_access(current_user.token, current_user.secret)
     client = Twitter::Base.new(oauth)
     @users = client.user_search params[:q] if params[:q].length > 1
+    @users.each {|u| Rails.logger.info u.screen_name }
     render :layout => false
   end
 

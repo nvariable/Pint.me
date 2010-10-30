@@ -1,11 +1,13 @@
 TPint.me
 v7
 r0
-t310104751.933280
+t310109818.670643
 cCheck dependencies
 cProcessInfoPlistFile /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/Info.plist Pint_me-Info.plist
 cCompileXIB /Users/mturner/code/pintme/iphone/Pint.me/MainWindow.xib
 cCompileXIB /Users/mturner/code/pintme/iphone/Pint.me/Pint_meViewController.xib
+cCpResource build/Debug-iphonesimulator/Pint.me.app/Image1.png Image1.png
+cCpResource build/Debug-iphonesimulator/Pint.me.app/button.png button.png
 cProcessPCH /var/folders/qq/qqsyO6zXEqSdaGGZfYKp4++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pint_me_Prefix-acybvbbkwmrkoxesfussjazxwirg/Pint_me_Prefix.pch.gch Pint_me_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Objects-normal/i386/main.o /Users/mturner/code/pintme/iphone/Pint.me/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Objects-normal/i386/Pint_meAppDelegate.o /Users/mturner/code/pintme/iphone/Pint.me/Classes/Pint_meAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
@@ -13,6 +15,36 @@ cCompileC build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Objects-normal
 cLd /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/Pint.me normal i386
 cGenerateDSYMFile /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app.dSYM /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/Pint.me
 cTouch /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk
+c000000004C494D260000000000000110
+t1279872294
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004BD1CD90000000000026F020
+t1272040848
+s2551840
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004BD1FFC200000000002A96A0
+t1272053698
+s2791072
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004BD1FF9E0000000000001355
+t1272053662
+s4949
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004BD20412000000000000098F
+t1272054802
+s2447
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004BD20471000000000222E640
+t1272054897
+s35841600
 
 N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk
 c000000004C6C30170000000000000110
@@ -45,39 +77,44 @@ t1281507972
 s31598784
 
 N/Users/mturner/code/pintme/iphone/Pint.me/Classes/Pint_meAppDelegate.h
-c000000004CCB9B2400000000000001E4
-t1288411940
-s484
+c000000004CCB9DAA00000000000001D5
+t1288412586
+s469
 i<UIKit/UIKit.h>
 
 N/Users/mturner/code/pintme/iphone/Pint.me/Classes/Pint_meAppDelegate.m
-c000000004CCB9B240000000000000A90
-t1288411940
-s2704
+c000000004CCB9D980000000000000A81
+t1288412568
+s2689
 i"Pint_meAppDelegate.h"
 i"Pint_meViewController.h"
 
 N/Users/mturner/code/pintme/iphone/Pint.me/Classes/Pint_meViewController.h
-c000000004CCB9B2400000000000000F3
-t1288411940
-s243
+c000000004CCB9DB300000000000000E4
+t1288412595
+s228
 i<UIKit/UIKit.h>
 
 N/Users/mturner/code/pintme/iphone/Pint.me/Classes/Pint_meViewController.m
-c000000004CCB9B2400000000000005BE
-t1288411940
-s1470
+c000000004CCB9DED00000000000005AF
+t1288412653
+s1455
 i"Pint_meViewController.h"
 
+N/Users/mturner/code/pintme/iphone/Pint.me/Image1.png
+c000000004CCBA8EA0000000000001A9A
+t1288415466
+s6810
+
 N/Users/mturner/code/pintme/iphone/Pint.me/MainWindow.xib
-c000000004CCB9B240000000000004E29
-t1288411940
-s20009
+c000000004CCBA5550000000000004F29
+t1288414549
+s20265
 
 N/Users/mturner/code/pintme/iphone/Pint.me/Pint_meViewController.xib
-c000000004CCB9B240000000000001A45
-t1288411940
-s6725
+c000000004CCBAEF30000000000004E78
+t1288417011
+s20088
 
 N/Users/mturner/code/pintme/iphone/Pint.me/Pint_me_Prefix.pch
 c000000004CCB9B2400000000000000B7
@@ -87,32 +124,40 @@ i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
 
 N/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app
-t1288411951
-s238
+t1288417018
+s306
 
 N/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app.dSYM
-t1288411951
+t1288413961
 s102
 
+N/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/Image1.png
+t1288415701
+s6810
+
 N/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/Info.plist
-t1288411944
+t1288413960
 s591
 
 N/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/MainWindow.nib
-t1288411950
+t1288415702
 s1681
 
 N/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/Pint.me
-t1288411951
+t1288413961
 s17084
 
 N/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/Pint_meViewController.nib
-t1288411950
-s1269
+t1288417018
+s3130
 
 N/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/PkgInfo
-t1288411944
+t1288413960
 s8
+
+N/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/button.png
+t1288416923
+s10079
 
 N/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Objects-normal/i386/Pint.me.LinkFileList
 c000000004CCB9B280000000000000196
@@ -120,26 +165,35 @@ t1288411944
 s406
 
 N/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Objects-normal/i386/Pint_meAppDelegate.o
-t1288411951
+t1288413961
 s47792
 
 N/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Objects-normal/i386/Pint_meViewController.o
-t1288411951
+t1288413961
 s34456
 
 N/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Objects-normal/i386/main.o
-t1288411951
+t1288413961
 s6308
 
+N/Users/mturner/code/pintme/iphone/Pint.me/button.png
+c000000004CCBAE34000000000000275F
+t1288416820
+s10079
+
 N/Users/mturner/code/pintme/iphone/Pint.me/main.m
-c000000004CCB9B24000000000000016E
-t1288411940
-s366
+c000000004CCBA2770000000000000160
+t1288413815
+s352
 i<UIKit/UIKit.h>
 
 N/var/folders/qq/qqsyO6zXEqSdaGGZfYKp4++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pint_me_Prefix-acybvbbkwmrkoxesfussjazxwirg/Pint_me_Prefix.pch.gch
 t1288411951
 s15211536
+
+N/var/folders/qq/qqsyO6zXEqSdaGGZfYKp4++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pint_me_Prefix-byfetxnobbmsykcyozvgxgldhwdz/Pint_me_Prefix.pch.gch
+t1288413816
+s13825936
 
 NPint_me-Info.plist
 c000000004CCB9B24000000000000038D
@@ -148,11 +202,11 @@ s909
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies310104744#310104744#0(0"0(0#1#0"8247620834010738688#0"0#
+lSLF07#2@18"Check dependencies310109818#310109818#0(0"0(0#1#0"8611902976#0"0#
 
 CCompileC build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Objects-normal/i386/Pint_meAppDelegate.o /Users/mturner/code/pintme/iphone/Pint.me/Classes/Pint_meAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s310104751.531441
-e310104751.756051
+s310106761.216562
+e310106761.292572
 r1
 xCompileC
 xbuild/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Objects-normal/i386/Pint_meAppDelegate.o
@@ -161,11 +215,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@78"Compile /Users/mturner/code/pintme/iphone/Pint.me/Classes/Pint_meAppDelegate.m310104751#310104751#0(0"0(0#0#70"/Users/mturner/code/pintme/iphone/Pint.me/Classes/Pint_meAppDelegate.m8602052192#2045"    cd /Users/mturner/code/pintme/iphone/Pint.me    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-generated-files.hmap -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-own-target-headers.hmap -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-all-target-headers.hmap -iquote /Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-project-headers.hmap -F/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator -I/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/include -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/DerivedSources/i386 -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/DerivedSources -include /var/folders/qq/qqsyO6zXEqSdaGGZfYKp4++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pint_me_Prefix-acybvbbkwmrkoxesfussjazxwirg/Pint_me_Prefix.pch -c /Users/mturner/code/pintme/iphone/Pint.me/Classes/Pint_meAppDelegate.m -o /Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Objects-normal/i386/Pint_meAppDelegate.o0#
+lSLF07#2@78"Compile /Users/mturner/code/pintme/iphone/Pint.me/Classes/Pint_meAppDelegate.m310106761#310106761#0(0"0(0#0#70"/Users/mturner/code/pintme/iphone/Pint.me/Classes/Pint_meAppDelegate.m8620964032#2045"    cd /Users/mturner/code/pintme/iphone/Pint.me    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-generated-files.hmap -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-own-target-headers.hmap -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-all-target-headers.hmap -iquote /Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-project-headers.hmap -F/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator -I/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/include -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/DerivedSources/i386 -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/DerivedSources -include /var/folders/qq/qqsyO6zXEqSdaGGZfYKp4++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pint_me_Prefix-acybvbbkwmrkoxesfussjazxwirg/Pint_me_Prefix.pch -c /Users/mturner/code/pintme/iphone/Pint.me/Classes/Pint_meAppDelegate.m -o /Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Objects-normal/i386/Pint_meAppDelegate.o0#
 
 CCompileC build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Objects-normal/i386/Pint_meViewController.o /Users/mturner/code/pintme/iphone/Pint.me/Classes/Pint_meViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s310104751.532649
-e310104751.745829
+s310106761.217632
+e310106761.281089
 r1
 xCompileC
 xbuild/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Objects-normal/i386/Pint_meViewController.o
@@ -174,11 +228,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@81"Compile /Users/mturner/code/pintme/iphone/Pint.me/Classes/Pint_meViewController.m310104751#310104751#0(0"0(0#0#73"/Users/mturner/code/pintme/iphone/Pint.me/Classes/Pint_meViewController.m8600262976#2051"    cd /Users/mturner/code/pintme/iphone/Pint.me    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-generated-files.hmap -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-own-target-headers.hmap -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-all-target-headers.hmap -iquote /Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-project-headers.hmap -F/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator -I/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/include -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/DerivedSources/i386 -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/DerivedSources -include /var/folders/qq/qqsyO6zXEqSdaGGZfYKp4++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pint_me_Prefix-acybvbbkwmrkoxesfussjazxwirg/Pint_me_Prefix.pch -c /Users/mturner/code/pintme/iphone/Pint.me/Classes/Pint_meViewController.m -o /Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Objects-normal/i386/Pint_meViewController.o0#
+lSLF07#2@81"Compile /Users/mturner/code/pintme/iphone/Pint.me/Classes/Pint_meViewController.m310106761#310106761#0(0"0(0#0#73"/Users/mturner/code/pintme/iphone/Pint.me/Classes/Pint_meViewController.m8617118464#2051"    cd /Users/mturner/code/pintme/iphone/Pint.me    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-generated-files.hmap -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-own-target-headers.hmap -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-all-target-headers.hmap -iquote /Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-project-headers.hmap -F/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator -I/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/include -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/DerivedSources/i386 -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/DerivedSources -include /var/folders/qq/qqsyO6zXEqSdaGGZfYKp4++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pint_me_Prefix-acybvbbkwmrkoxesfussjazxwirg/Pint_me_Prefix.pch -c /Users/mturner/code/pintme/iphone/Pint.me/Classes/Pint_meViewController.m -o /Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Objects-normal/i386/Pint_meViewController.o0#
 
 CCompileC build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Objects-normal/i386/main.o /Users/mturner/code/pintme/iphone/Pint.me/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s310104751.529971
-e310104751.738509
+s310106761.215431
+e310106761.272132
 r1
 xCompileC
 xbuild/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Objects-normal/i386/main.o
@@ -187,51 +241,69 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@56"Compile /Users/mturner/code/pintme/iphone/Pint.me/main.m310104751#310104751#0(0"0(0#0#48"/Users/mturner/code/pintme/iphone/Pint.me/main.m8601589440#2009"    cd /Users/mturner/code/pintme/iphone/Pint.me    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-generated-files.hmap -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-own-target-headers.hmap -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-all-target-headers.hmap -iquote /Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-project-headers.hmap -F/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator -I/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/include -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/DerivedSources/i386 -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/DerivedSources -include /var/folders/qq/qqsyO6zXEqSdaGGZfYKp4++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pint_me_Prefix-acybvbbkwmrkoxesfussjazxwirg/Pint_me_Prefix.pch -c /Users/mturner/code/pintme/iphone/Pint.me/main.m -o /Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Objects-normal/i386/main.o0#
+lSLF07#2@56"Compile /Users/mturner/code/pintme/iphone/Pint.me/main.m310106761#310106761#0(0"0(0#0#48"/Users/mturner/code/pintme/iphone/Pint.me/main.m8621439040#2009"    cd /Users/mturner/code/pintme/iphone/Pint.me    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-generated-files.hmap -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-own-target-headers.hmap -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-all-target-headers.hmap -iquote /Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-project-headers.hmap -F/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator -I/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/include -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/DerivedSources/i386 -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/DerivedSources -include /var/folders/qq/qqsyO6zXEqSdaGGZfYKp4++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pint_me_Prefix-acybvbbkwmrkoxesfussjazxwirg/Pint_me_Prefix.pch -c /Users/mturner/code/pintme/iphone/Pint.me/main.m -o /Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Objects-normal/i386/main.o0#
 
 CCompileXIB /Users/mturner/code/pintme/iphone/Pint.me/MainWindow.xib
-s310104744.874042
-e310104750.132896
+s310108501.543697
+e310108502.513861
 r1
 xCompileXIB
 x/Users/mturner/code/pintme/iphone/Pint.me/MainWindow.xib
-lSLF07#2@25"CompileXIB MainWindow.xib310104744#310104750#0(0"0(0#0#56"/Users/mturner/code/pintme/iphone/Pint.me/MainWindow.xib8602102592#641"    cd /Users/mturner/code/pintme/iphone/Pint.me    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.1    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/MainWindow.nib /Users/mturner/code/pintme/iphone/Pint.me/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk0#
+lSLF07#2@25"CompileXIB MainWindow.xib310108501#310108502#0(0"0(0#0#56"/Users/mturner/code/pintme/iphone/Pint.me/MainWindow.xib8614821184#641"    cd /Users/mturner/code/pintme/iphone/Pint.me    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.1    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/MainWindow.nib /Users/mturner/code/pintme/iphone/Pint.me/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk0#
 
 CCompileXIB /Users/mturner/code/pintme/iphone/Pint.me/Pint_meViewController.xib
-s310104744.877836
-e310104750.572538
+s310109818.270901
+e310109818.667311
 r1
 xCompileXIB
 x/Users/mturner/code/pintme/iphone/Pint.me/Pint_meViewController.xib
-lSLF07#2@36"CompileXIB Pint_meViewController.xib310104744#310104750#0(0"0(0#0#67"/Users/mturner/code/pintme/iphone/Pint.me/Pint_meViewController.xib8601324512#663"    cd /Users/mturner/code/pintme/iphone/Pint.me    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.1    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/Pint_meViewController.nib /Users/mturner/code/pintme/iphone/Pint.me/Pint_meViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk0#
+lSLF07#2@36"CompileXIB Pint_meViewController.xib310109818#310109818#0(0"0(0#0#67"/Users/mturner/code/pintme/iphone/Pint.me/Pint_meViewController.xib8622119968#663"    cd /Users/mturner/code/pintme/iphone/Pint.me    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.1    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/Pint_meViewController.nib /Users/mturner/code/pintme/iphone/Pint.me/Pint_meViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk0#
+
+CCpResource build/Debug-iphonesimulator/Pint.me.app/Image1.png Image1.png
+s310108501.545427
+e310108501.614009
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Pint.me.app/Image1.png
+xImage1.png
+lSLF07#2@15"Copy Image1.png310108501#310108501#0(0"0(0#0#52"/Users/mturner/code/pintme/iphone/Pint.me/Image1.png8620865376#525"    cd /Users/mturner/code/pintme/iphone/Pint.me    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/mturner/code/pintme/iphone/Pint.me/Image1.png /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app0#
+
+CCpResource build/Debug-iphonesimulator/Pint.me.app/button.png button.png
+s310109723.500505
+e310109723.505391
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Pint.me.app/button.png
+xbutton.png
+lSLF07#2@15"Copy button.png310109723#310109723#0(0"0(0#0#52"/Users/mturner/code/pintme/iphone/Pint.me/button.png8605867168#525"    cd /Users/mturner/code/pintme/iphone/Pint.me    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/mturner/code/pintme/iphone/Pint.me/button.png /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app0#
 
 CGenerateDSYMFile /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app.dSYM /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/Pint.me
-s310104751.914141
-e310104751.930661
+s310106761.312800
+e310106761.325549
 r1
 xGenerateDSYMFile
 x/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app.dSYM
 x/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/Pint.me
-lSLF07#2@109"GenerateDSYMFile build/Debug-iphonesimulator/Pint.me.app.dSYM build/Debug-iphonesimulator/Pint.me.app/Pint.me310104751#310104751#0(0"0(0#0#89"/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/Pint.me8601042272#454"    cd /Users/mturner/code/pintme/iphone/Pint.me    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/Pint.me -o /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app.dSYM0#
+lSLF07#2@109"GenerateDSYMFile build/Debug-iphonesimulator/Pint.me.app.dSYM build/Debug-iphonesimulator/Pint.me.app/Pint.me310106761#310106761#0(0"0(0#0#89"/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/Pint.me8621260832#454"    cd /Users/mturner/code/pintme/iphone/Pint.me    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/Pint.me -o /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app.dSYM0#
 
 CLd /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/Pint.me normal i386
-s310104751.756138
-e310104751.914038
+s310106761.292661
+e310106761.312705
 r1
 xLd
 x/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/Pint.me
 xnormal
 xi386
-lSLF07#2@94"Link /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/Pint.me310104751#310104751#0(0"0(0#0#0"8600738240#977"    cd /Users/mturner/code/pintme/iphone/Pint.me    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -L/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator -F/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator -filelist /Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Objects-normal/i386/Pint.me.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/Pint.me0#
+lSLF07#2@94"Link /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/Pint.me310106761#310106761#0(0"0(0#0#0"8622550816#977"    cd /Users/mturner/code/pintme/iphone/Pint.me    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -L/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator -F/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator -filelist /Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Objects-normal/i386/Pint.me.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/Pint.me0#
 
 CProcessInfoPlistFile /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/Info.plist Pint_me-Info.plist
-s310104744.826283
-e310104744.873916
+s310106760.854758
+e310106760.859607
 r1
 xProcessInfoPlistFile
 x/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/Info.plist
 xPint_me-Info.plist
-lSLF07#2@26"Process Pint_me-Info.plist310104744#310104744#0(0"0(0#0#60"/Users/mturner/code/pintme/iphone/Pint.me/Pint_me-Info.plist30681223440564324#550"    cd /Users/mturner/code/pintme/iphone/Pint.me    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    builtin-infoPlistUtility Pint_me-Info.plist -genpkginfo /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/Info.plist0#
+lSLF07#2@26"Process Pint_me-Info.plist310106760#310106760#0(0"0(0#0#60"/Users/mturner/code/pintme/iphone/Pint.me/Pint_me-Info.plist8608994496#550"    cd /Users/mturner/code/pintme/iphone/Pint.me    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    builtin-infoPlistUtility Pint_me-Info.plist -genpkginfo /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app/Info.plist0#
 
 CProcessPCH /var/folders/qq/qqsyO6zXEqSdaGGZfYKp4++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pint_me_Prefix-acybvbbkwmrkoxesfussjazxwirg/Pint_me_Prefix.pch.gch Pint_me_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
 s310104750.572834
@@ -246,11 +318,24 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@29"Precompile Pint_me_Prefix.pch310104750#310104751#0(0"0(0#0#60"/Users/mturner/code/pintme/iphone/Pint.me/Pint_me_Prefix.pch8598733216#1898"    cd /Users/mturner/code/pintme/iphone/Pint.me    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-generated-files.hmap -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-own-target-headers.hmap -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-all-target-headers.hmap -iquote /Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-project-headers.hmap -F/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator -I/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/include -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/DerivedSources/i386 -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/DerivedSources -c /Users/mturner/code/pintme/iphone/Pint.me/Pint_me_Prefix.pch -o /var/folders/qq/qqsyO6zXEqSdaGGZfYKp4++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pint_me_Prefix-acybvbbkwmrkoxesfussjazxwirg/Pint_me_Prefix.pch.gch0#
 
+CProcessPCH /var/folders/qq/qqsyO6zXEqSdaGGZfYKp4++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pint_me_Prefix-byfetxnobbmsykcyozvgxgldhwdz/Pint_me_Prefix.pch.gch Pint_me_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s310106616.234511
+e310106616.968672
+r1
+xProcessPCH
+x/var/folders/qq/qqsyO6zXEqSdaGGZfYKp4++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pint_me_Prefix-byfetxnobbmsykcyozvgxgldhwdz/Pint_me_Prefix.pch.gch
+xPint_me_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile Pint_me_Prefix.pch310106616#310106616#0(0"0(0#0#60"/Users/mturner/code/pintme/iphone/Pint.me/Pint_me_Prefix.pch8602468704#1939"    cd /Users/mturner/code/pintme/iphone/Pint.me    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-generated-files.hmap -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-own-target-headers.hmap -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-all-target-headers.hmap -iquote /Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/Pint.me-project-headers.hmap -F/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator -I/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/include -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/DerivedSources/i386 -I/Users/mturner/code/pintme/iphone/Pint.me/build/Pint.me.build/Debug-iphonesimulator/Pint.me.build/DerivedSources -c /Users/mturner/code/pintme/iphone/Pint.me/Pint_me_Prefix.pch -o /var/folders/qq/qqsyO6zXEqSdaGGZfYKp4++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pint_me_Prefix-byfetxnobbmsykcyozvgxgldhwdz/Pint_me_Prefix.pch.gch0#
+
 CTouch /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app
-s310104751.930737
-e310104751.933222
+s310109818.668105
+e310109818.670602
 r1
 xTouch
 x/Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app
-lSLF07#2@87"Touch /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app310104751#310104751#0(0"0(0#0#0"8600323968#346"    cd /Users/mturner/code/pintme/iphone/Pint.me    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app0#
+lSLF07#2@87"Touch /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app310109818#310109818#0(0"0(0#0#0"8619084608#346"    cd /Users/mturner/code/pintme/iphone/Pint.me    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/mturner/code/pintme/iphone/Pint.me/build/Debug-iphonesimulator/Pint.me.app0#
 
