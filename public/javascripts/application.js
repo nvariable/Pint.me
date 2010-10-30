@@ -2,12 +2,11 @@ $(document).ready(function(){
   function search() {
     $("#q").addClass("loading");
     var form = $("#twitter_search");
-    var url = "/home/search";
+    var url = "/home/search.js";
     var formData = form.serialize();
     
-    $.get(url, formData, function(html) { 
-      $("#twitter_search").removeClass("loading"); 
-      $("#search-results").html(html);
+    $.get(url, formData, function(result) { 
+      $("#search-results").html(result);
     });
   }
 
