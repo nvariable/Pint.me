@@ -21,9 +21,11 @@ describe User do
           "screen_name"=>'tim_linquist'
     }}}
   end
-  
-  after(:each) do
-    User.destroy_all
+
+  it "should create authorization from hash even with placeholder user in place" do
+    @user = User.create_from_screen_name('tim_linquist')
+    @auth = User.create_from_hash!(@response)
+    @auth.id.should == @user.id
   end
 
   it "should create a placeholder user with a new screen name" do

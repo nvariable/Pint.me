@@ -8,6 +8,9 @@ class User < ActiveRecord::Base
   
   #Compatible with twitter only. Abstraction later for other providers
   def self.create_from_hash!(hash)
+    # First check to see if screen name exists
+    user = User.find_by_screen_name(hash['extra']['user_hash']['screen_name'])
+    return user if user
     create(
       :name   => hash['user_info']['name'],
       :token  => hash['credentials']['token'],
